@@ -1,0 +1,76 @@
+#customStyle * {
+  box-sizing: border-box;
+}
+
+#customStyle body {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: white;
+  color: rgb(60, 60, 80);
+  font-family: 'Montserrat';
+  font-weight: 800;
+  font-size: 3em;
+  overflow: hidden;
+  margin-top: 450px;
+  margin-left: 200px;
+  z-index: 1;
+}
+
+#customStyle .wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+#customStyle section {
+  position: relative;
+  z-index: 1;
+}
+
+#customStyle section::after {
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5em;
+  letter-spacing: 0.5em;
+  content: attr(data-identity);
+  color: #EAEAF2;
+  margin-top: 450px;
+  z-index: 1;
+  animation: animLetterSpacing 4500ms infinite ease-in-out;
+}
+
+#customStyle span {
+  font-family: "Libre baskerville";
+  font-style: italic;
+  font-size:0%;
+  display: inline-block;
+  color: #ff0333;
+}
+
+#customStyle .svg-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes animLetterSpacing {
+  0% {
+    letter-spacing: 2.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+    letter-spacing: 0.5em;
+  }
+  70% {
+    letter-spacing: 0.75em;
+  }
+  100% {
+    letter-spacing: 2.5em;
+  }
+}
