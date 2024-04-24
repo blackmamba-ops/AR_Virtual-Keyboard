@@ -1,7 +1,7 @@
 import google.generativeai as genai
 
 def send_to_gemini(text):
-    genai.configure(api_key="AIzaSyDQIWkzF6_NlMu7M17JKS88tSDWVFzyUW0")
+    genai.configure(api_key="YOUR API KEY")
 
     generation_config = {
       "temperature": 0.9,
