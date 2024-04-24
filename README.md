@@ -18,7 +18,7 @@ AR Virtual Keyboard is a project that utilizes Augmented Reality (AR) and comput
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/AR_Virtual-Keyboard.git
+git clone [https://github.com/yourusername/AR_Virtual-Keyboard.git](https://github.com/blackmamba-ops/AR_Virtual-Keyboard.git)
 ```
 
 2. Navigate to the project directory:
